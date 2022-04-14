@@ -1,6 +1,8 @@
 from django.contrib import admin
 from django.urls import path,include
 from . import views
+
+# module for redirecting all the web pages
 urlpatterns = [
     path('',views.home,name='home'),
     path('signup',views.signup,name='signup'),
