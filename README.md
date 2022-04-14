@@ -15,4 +15,15 @@ Hello There, Welcome to secure SingUp. Which is providing a better authenticatio
 ```console
 pip install django
 ```
+   * Now use the below command in your terminal to run the code
+```console
+python manage.py runserver
+```
+   * Now run the below link in your browser to open web-page
+[title] http://127.0.0.1:8000/
+
+   * Now, you will be redirected to the home page, click on sign-up button and fill the details according.
+   * After doing the sign up a confirmation mail will be given to your registered email to verify your details.
+   * After verification click on the login page to enter the login details.
+   * make sure that the verification link will open in the same system.
 
