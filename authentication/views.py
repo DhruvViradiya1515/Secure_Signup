@@ -35,7 +35,7 @@ def contact(request):
     return render(request,"contact.html")
 
 def about(request):
-    # return HttpResponse("Hello there, this is about")
+    # return HttpResponse("Hello there, this is about us")
     return render(request,"about.html")
 
 def signup(request):
@@ -102,7 +102,7 @@ def signup(request):
 
 
         subject = 'Welcome to '
-        message = f"Hello {myuser.first_name} !!\n\tWelcome, Thanks for visiting our website. \n We have also sent you a confirmation email, please confirm your email in order to activate your account. \n\n Thanking you"
+        message = f"Hello {myuser.first_name} !!\n\tWelcome, Thanks for visiting our website. \nWe have also sent you a confirmation email, please confirm your email in order to activate your account. \n\n Thanking you\nSecure SignUp"
         from_email = settings.EMAIL_HOST_USER
         to_list = [myuser.email]
         send_mail(subject,message,from_email,to_list,fail_silently=True)
@@ -153,7 +153,7 @@ def Login(request):
             return render(request,'index.html',{'fname':fname})
         
         else:
-            messages.error(request,'Your are breaking my heart, you\'r not using the same credentials')
+            messages.error(request,'Your are breaking my heart, you\'re not using the same credentials')
             return redirect('home')
 
     return render(request,'Login.html')
