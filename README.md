@@ -20,7 +20,7 @@ pip install django
 python manage.py runserver
 ```
    * Now run the below link in your browser to open web-page
-[title] http://127.0.0.1:8000/
+ http://127.0.0.1:8000/
 
    * Now, you will be redirected to the home page, click on sign-up button and fill the details according.
    * After doing the sign up a confirmation mail will be given to your registered email to verify your details.
